@@ -7,25 +7,6 @@ const Menu = () => {
     const [active, setActive] = useState(0)
     const [hover, setHover] = useState('')
 
-    // let list = document.querySelectorAll('.list')
-    // for(let i=0; i<list.length; i++){
-    //     list[i].onmouseover = () => {
-    //         let j = 0
-    //         while (j < list.length){
-    //             list[j++].className = 'list'
-    //         }
-    //         list[i].className = 'list active'
-    //     }
-    // }
-
-    // list.forEach(elements =>{
-    //     elements.addEventListener("mouseenter", (e) => {
-    //         let bg = document.querySelector('main')
-    //         let color = e.target.getAttribute('bg-color')
-    //         bg.style.backgroundColor = color
-    //     })
-    //  })
-
   return (
     <div className='nav'>
         <ul>
