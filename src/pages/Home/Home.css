@@ -1,0 +1,350 @@
+/* PROFILE BOX */
+.home-profile-box{
+    position: relative;
+    width: 600px;
+    height: 380px;
+    background: #51446e;
+    border-radius: 20px;
+    border: 1px solid #878e99;
+    overflow: hidden;
+    padding: 20px 40px;
+    /* border: 10px solid #37ba82; */
+}
+
+.home-profile-box .photo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.summary-box{
+    position: absolute;
+    display: flex;
+    right: 15px;
+    width: 320px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    top: 20px;
+}
+
+.summary-box .info-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #878e99;
+    border-radius: 20px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.summary-box .info-box ion-icon{
+    font-size: 25px;
+}
+
+.info-box .info-content{
+    color: #fff;
+}
+
+.info-box .info-icon{
+    color: #fff;
+}
+
+.info-box .info-content h3{
+    font-size: 14px;
+    margin: 5px;
+}
+
+.info-box .info-content p{
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.home-profile-box .text-profile{
+    margin: 45px 0;
+}
+
+.home-profile-box .text-profile h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #ddd;
+}
+
+.home-profile-box .text-profile h1 span{
+    color: #ff014f
+}
+
+.home-profile-box .text-profile p{
+    color: #878e99;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/* KONTAK BOX */
+.home-contact-box{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 380px;
+    height: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.home-contact-box .contact-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    background: #51446e;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.home-contact-box .contact-box .contact-icon{
+    position: absolute;
+    display: flex;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--icon-contact);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+    transition: .5s;
+    transition-delay: .25s;
+}
+
+.home-contact-box .contact-box:hover .contact-icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+}
+
+.home-contact-box .contact-box ion-icon{
+    font-size: 75px;
+    color:#fff;
+    transition: .5s;
+    transition-delay: 0.25s;
+}
+
+.home-contact-box .contact-box:hover ion-icon{
+    font-size: 32px;
+    transition-delay: 0s;
+}
+
+.home-contact-box .contact-box .contact-content{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+    z-index: 1;
+    transition: .5s;
+    transition-delay: 0s;
+}
+
+.service-container .service-box:hover .contact-content{
+    transform: scale(.5);
+    transition-delay: .25s;
+}
+
+.home-contact-box .contact-box .contact-content h3{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.home-contact-box .contact-box .contact-content p{
+    font-weight: 300;
+    line-height: 1em;
+}
+
+/* SKILL BOX */
+.home-skill-box{
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 180px;
+    overflow: hidden;
+    justify-content: left;
+    flex-direction: row;
+    gap: 20px;
+}
+.skill-box{
+    position: relative;
+    display: flex;
+    height: 180px;
+    width: 200px;
+    background: #51446e;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.skill-box .skill-icon{
+    position: absolute;
+    display: flex;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: .5s all ease-out;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    z-index: 999;
+}
+
+.home-skill-box .skill-box:hover .skill-icon{
+    top: 70px;
+    left: calc(50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    visibility: hidden;
+    animation-delay: 0s;
+}
+
+.skill-box .skill-icon ion-icon{
+    font-size: 70px;
+    color:#fff;
+}
+
+.skill-box .skill-percent,
+.skill-box .skill-percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.skill-box .skill-percent svg{
+    transform: rotate(270deg);
+}
+.skill-box .skill-percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 5;
+    stroke: #191919;
+    transform: translate(5px, 5px);
+}
+
+.skill-box .skill-percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.dot{
+    position: absolute;
+    inset: -1px;
+    z-index: 10;
+    /* transform: rotate(calc(3.6deg * var(--num))); */
+    animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 20px var(--clr), 0 0 50px var(--clr);
+}
+
+.number-skill{
+    display: flex;
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+.number-skill h2{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.number-skill h2 span{
+    font-weight: 300;
+    color: #fff;
+    font-size: 12px;
+}
+
+.number-skill p{
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75)
+}
+
+
+/* HOME LAIN */
+.map-container{
+    position: relative;
+    width: 180px;
+    height: 380px;
+    /* border: 10px solid #37ba82; */
+    background: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+
+
+
+
+

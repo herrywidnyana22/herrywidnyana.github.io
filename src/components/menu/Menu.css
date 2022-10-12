@@ -1,0 +1,163 @@
+.nav{
+    position: relative;
+    width: 350px;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    border-radius: 35px;
+}
+
+.nav ul{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul li{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav ul li .icon-list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav ul li .icon-list .icon-menu{
+    position: relative;
+    display: block;
+    line-height: 80px;
+    text-align: center;
+    transition: .5s;
+}
+
+.active::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+}
+
+.hover .icon-menu{
+    color: #fff !important;
+}
+
+.nav ul li ion-icon{
+    font-size: 25px;
+}
+
+.nav ul li .title{
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    background: #fff;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav ul li .icon-list:hover .title{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 100%);
+}
+
+.nav ul li .icon-list .title::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    bottom: -8px;
+    left: 48%;
+    transform: rotate(45deg) translateX(-50%);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.nav ul .indicator{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    transition: .5s;
+}
+
+.nav ul .indicator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: var(--bg-ungu);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+/* 70px dimensi li */
+.nav ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+.nav ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * 1));
+}
+.nav ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 2));
+}
+.nav ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px * 3));
+}
+.nav ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px * 4));
+}
+
+.nav ul li:nth-child(1).hover ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+.nav ul li:nth-child(2).hover ~ .indicator{
+    transform: translateX(calc(70px * 1));
+}
+.nav ul li:nth-child(3).hover ~ .indicator{
+    transform: translateX(calc(70px * 2));
+}
+.nav ul li:nth-child(4).hover ~ .indicator{
+    transform: translateX(calc(70px * 3));
+}
+.nav ul li:nth-child(5).hover ~ .indicator{
+    transform: translateX(calc(70px * 4));
+}
+
+
+.nav ul li:nth-child(1):hover ~ .indicator::before{
+    background: #4eb7ff;
+}
+.nav ul li:nth-child(2):hover ~ .indicator::before{
+    background: #fd6494
+}
+.nav ul li:nth-child(3):hover ~ .indicator::before{
+    background: #37ba82
+}
+.nav ul li:nth-child(4):hover ~ .indicator::before{
+    background: #ffb508
+}
+.nav ul li:nth-child(5):hover ~ .indicator::before{
+    background: #cd57ff
+}

@@ -1,0 +1,72 @@
+.service-container .service-box{
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background: #51446e;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.service-container .service-box .service-icon{
+    position: absolute;
+    display: flex;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--j);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+    transition: .5s;
+    transition-delay: .25s;
+}
+
+.service-container .service-box:hover .service-icon{
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+}
+
+.service-container .service-box ion-icon{
+    font-size: 80px;
+    color:#fff;
+    transition: .5s;
+    transition-delay: 0.25s;
+}
+
+.service-container .service-box:hover ion-icon{
+    font-size: 2em;
+    transition-delay: 0s;
+}
+
+.service-container .service-box .service-content{
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+    z-index: 1;
+    transition: .5s;
+    transition-delay: 0s;
+}
+
+.service-container .service-box:hover .service-content{
+    transform: scale(1);
+    transition-delay: .25s;
+}
+
+.service-container .service-box .service-content h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.service-container .service-box .service-content p{
+    font-weight: 300;
+    line-height: 24px;
+}
